@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="grid">
+            <div id="header">
+                <div class="header-logo">
+                    Truyệntranh24h
+                </div>
+                <div class="header-search">
+                    <input type="text" placeholder="search..." name="" id="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="header-toggle">
+                    <i class="fa-thin fa-lamp"></i>
+                </div>
+                <ul class="header-list-login">
+                    <li class="header-login">
+                        <a href="" class="header-login-link">Dang ky</a>
+                    </li>
+                    <li class="header-login">
+                        <a href="" class="header-login-link">Dang nhap</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="" class="navbar-item-link">Trang chủ</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="" class="navbar-item-link">Theo dõi </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="" class="navbar-item-link">Thể loại</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="" class="navbar-item-link">Xếp hạng</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="" class="navbar-item-link">Góp ý</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="" class="navbar-item-link">Fanpage</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- body -->
+    <div id="body">
+        <div class="grid">
+            
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+
+    </footer>
+</body>
+</html>
