@@ -1,6 +1,9 @@
 :root {
-    --black-color: #333;
-    --white-text: #ccc;
+    --color-text: #ccc;
+    --black-body: #333;
+    --black-layout: #252525;
+    --green-color: #a1ff59;
+    --red-color: #ff4141;
 }
 
 * {
@@ -18,9 +21,26 @@ body {
     font-size: 1.6rem;
 }
 
+/* .grid */
 .grid {
     width: 1124px;
     margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px;
+}
+
+.column {
+    flex-basis: 16.6667%;
+    margin: 0 6px;
+}
+
+.img-width {
+    width: 100%;
 }
 
 input, button {
@@ -38,7 +58,7 @@ a {
 
 /* header */
 header {
-    background: var(--black-color);
+    background-color:#252525;
     position: fixed;
     height: 98px;
     top: 0;
@@ -48,7 +68,6 @@ header {
 
 #header {
     display: flex;
-    background-color: blueviolet;
     justify-content: space-between;
     align-items: center;
     height: 72px;
@@ -56,9 +75,12 @@ header {
 
 .header-logo {
     font-size: 3.6rem;
-    color: #fff822;
+    color: var(--green-color);
     padding: 0 8px;
 }
+.header-logo:hover {
+    opacity: .6;
+} 
 
 .header-search {
     height: 32px;
@@ -79,6 +101,9 @@ header {
     cursor: pointer;
     color: #fff;
 }
+.header-search i:hover {
+    opacity: .6;
+}
 
 .header-toggle {
 
@@ -96,13 +121,16 @@ header {
 .header-login-link {
     padding: 6px 12px;
     font-size: 1.6rem;
-    color: #fff822;
+    color: var(--green-color);
     font-weight: 600;
+}
+.header-login-link:hover {
+    opacity: .6;
 }
 
 /* navbar */
 #navbar {
-    background-color: #95ff44;
+    background-color: var(--green-color);
 }
 
 .navbar-list {
@@ -115,44 +143,133 @@ header {
 
 .navbar-item-link {
     font-size: 2.2rem;
-    color: #2103cb;
+    color: var(--red-color);
     padding: 6px 8px;
+}
+.navbar-item-link:hover {
+    opacity: .6;
 }
 
 
 /* body */
 #body {
-    background-color: var(--black-color);
+    background-color: var(--black-body);
+    padding-bottom: 52px;
 }
 
 .body-content {
-    background-color: #fff;
-    height: 1000px;
+    background-color: var(--black-layout);
     margin-top: 98px;
 }
 
-.body-content-box1 {
+.body-content-box-title {
     display: block;
 }
 
-.body-box1-wrapper-heading {
-    background-color: #2103cb;
+.body-box-wrapper-heading {
+    background-color: var(--color-text);
     display: inline-flex;
     margin-top: 15px;
     width: 100%;
 }
 
-.body-box1-wrapper-heading h2 {
-    color: #ff4141;
+.body-box-wrapper-heading h2 {
+    color: var(--red-color);
     margin: 0 8px;
+    height: 36px;
+    line-height: 40px;
 }
 
-.body-box1-wrapper-heading i {
-    color: #fff;
+.body-box-wrapper-heading i {
+    color: var(--red-color);
     font-size: 16px;
+    margin-top: 12px;
 }
+
+.body-content-box-comic {
+    margin: 6px 0;
+    display: inline-block;
+}
+
+.body-content-box-comic-list {
+
+}
+
+.body-content-box-comic-item {
+    box-shadow: 0 1px 4px var(--color-text);
+    padding: 6px;
+}
+
+.body-content-box-comic-list a {
+
+}
+
+.body-content-box-comic-list a img {
+
+}
+
+.body-content-box-comic-heading {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    color: var(--color-text);
+}
+
+.body-box2-link-infor-chap {
+
+}
+
+.body-box2-item-infor-chap {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-text);
+    font-size: 1.4rem;
+}
+
+.body-box2-latest-chapter {
+
+}
+
+.body-box2-time-chapter {
+
+}
+
+/* Chuyển chap */
+.body-wrapper-chapters {
+    width: 516px;
+    padding: 32px 0;
+    margin: auto;
+}
+
+.body-wrapper-chapters-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-wrapper-chapters-item {
+    width: 52px;
+    height: 24px;
+}
+
+.body-wrapper-chapters-btn {
+    font-size: 1.8rem;
+    width: 100%;
+    height: 100%;
+    color: var(--color-text);
+    background-color: var(--red-color);
+    cursor: pointer;
+}
+.body-wrapper-chapters-btn:hover {
+    opacity: .6;
+}
+
 
 /* footer */
-.footer {
-
+footer {
+    background-color: var(--black-layout);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text);
+    padding: 72px;
 }
