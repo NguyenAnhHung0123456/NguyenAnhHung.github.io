@@ -14,7 +14,7 @@ toggleElement.onclick = function() {
         toggle = false
 
         body.style="background-color: #fff"
-        header.style="background-color: #7a00ff"
+        header.style="background-color: #442d2f"
         navbar.style="background-color: #64681b"
         bodyContent.style="background-color: #fff"
         for(let a = 0; a < headingImg.length; a++) {
